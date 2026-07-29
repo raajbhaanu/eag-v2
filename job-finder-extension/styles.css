@@ -1,0 +1,13 @@
+body { font-family: sans-serif; width: 350px; margin: 0; padding: 15px; background: #fff; }
+.badge { background: #4f46e5; color: #fff; padding: 2px 5px; border-radius: 4px; font-size: 10px; }
+textarea { width: 100%; box-sizing: border-box; padding: 8px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px; }
+button#searchBtn { width: 100%; background: #4f46e5; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+.tabs { display: flex; border-bottom: 1px solid #eee; margin-top: 15px; }
+.tabs button { flex: 1; padding: 8px; background: none; border: none; color: #999; cursor: pointer; }
+.tabs button.active { color: #4f46e5; border-bottom: 2px solid #4f46e5; font-weight: bold; }
+ul { list-style: none; padding: 0; margin-top: 10px; min-height: 200px; }
+li { padding: 8px 0; border-bottom: 1px dotted #eee; font-size: 13px; }
+a { color: #2563eb; text-decoration: none; }
+.nav { display: flex; justify-content: space-between; align-items: center; font-size: 12px; padding-top: 10px; }
+.hidden { display: none !important; }
+#loading { text-align: center; margin-top: 10px; color: #4f46e5; }
