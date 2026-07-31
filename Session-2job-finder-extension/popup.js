@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyDXAYFwGJAeml9vf_EjiKrO3aiL1MAOTcU'; 
+const API_KEY = 'xx'; 
 const MODEL_NAME = 'gemini-2.5-flash'; 
 
 let jobs = [], managers = [], view = 'jobs', page = 1;
