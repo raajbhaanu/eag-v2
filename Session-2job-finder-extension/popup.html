@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Career Scout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Career Scout <span class="badge">AI</span></h3>
+        <p style="font-size:11px; margin-top:-10px; color:#666">Gemini 2.5 Flash Edition</p>
+        
+        <label>Industry/Field:</label>
+        <textarea id="industryInput" rows="2">Education Policy and Management</textarea>
+        <button id="searchBtn">Find Jobs & Managers</button>
+        
+        <div id="loading" class="hidden">Searching...</div>
+        
+        <div id="results" class="hidden">
+            <div class="tabs">
+                <button id="showJobs" class="active">Jobs</button>
+                <button id="showManagers">Managers</button>
+            </div>
+            <ul id="displayList"></ul>
+            <div class="nav">
+                <button id="prevBtn">Prev</button>
+                <span id="pageTxt">Page 1</span>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

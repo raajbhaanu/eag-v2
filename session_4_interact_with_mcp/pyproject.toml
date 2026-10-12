@@ -1,0 +1,24 @@
+[project]
+name = "session-4-interact-with-mcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Raaj S", email = "raaj@hivebrite.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=2.27.0",
+    "mcp[cli]<2",
+    "pillow>=12.3.0",
+    "pyautogui>=0.9.54",
+    "pyobjc>=12.2.2",
+    "pywinauto>=0.6.9",
+]
+
+[project.scripts]
+session-4-interact-with-mcp = "session_4_interact_with_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
