@@ -1,0 +1,13 @@
+geocode_city({"city":"Paris"}) -> {"city":"Paris","country":"France","lat":48.85341,"lon":2.3488}
+geocode_city({"city":"Tokyo"}) -> {"city":"Tokyo","country":"Japan","lat":35.6895,"lon":139.69171}
+distance_km({"lat1":48.85341,"lon1":2.3488,"lat2":35.6895,"lon2":139.69171}) -> {"km":9713}
+calculate({"expression":"9713 * 2 * 0.09"}) -> {"result":1748.34}
+get_forecast({"lat":35.6895,"lon":139.69171,"days":5}) -> {"days":5,"avg_max_c":24.7,"avg_min_c":16.1,"coldest_c":13.5,"hottest_c":26.6,"rainy_days":0}
+get_exchange_rate({"from":"EUR","to":"JPY"}) -> {"from":"EUR","to":"JPY","rate":177.28,"date":"2026-10-05"}
+calculate({"expression":"1748.34 + 5 * 120"}) -> {"result":2348.34}
+calculate({"expression":"1500 - 2348.34"}) -> {"result":-848.34}
+
+-- error / fallback paths --
+geocode_city -> error: No city found for "Zzzzqx"
+calculate -> error: Unsupported expression: 2 + process.exit()
+get_exchange_rate -> error: HTTP 404 from api.frankfurter.dev
