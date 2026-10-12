@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Trip Reality Check Agent",
+  "version": "1.0",
+  "description": "Multi-step LLM agent: is this trip affordable, what's the weather, what should I pack?",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://geocoding-api.open-meteo.com/*",
+    "https://api.open-meteo.com/*",
+    "https://api.frankfurter.dev/*"
+  ],
+  "action": { "default_popup": "popup.html" }
+}
